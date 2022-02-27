@@ -310,4 +310,4 @@ cluster-delete() {
 # https://stackoverflow.com/a/2627461
 FUNC=$(compgen -A 'function' | grep $1)
 [[ -n $FUNC ]] && { info execute $1; eval $1; } || usage;
-exit 0
+exit 01
